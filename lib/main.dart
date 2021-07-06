@@ -87,7 +87,7 @@ class _StoryScreenState extends State<StoryScreen>
     return Scaffold(
       backgroundColor: Colors.black,
       body: GestureDetector(
-        onTapDown: (details) => print('${details.globalPosition.dx}'),
+        onTapDown: (details) => _onTapDown(details, story),
         child: Stack(
           children: <Widget>[
             PageView.builder(
